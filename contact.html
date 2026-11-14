@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shanitah Juice Company</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="images/orange-juice.jpg" alt="Glass of orange juice representing Shanitah Juice Company">
+        <span>Shanitah Juice Company</span>
+      </a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+  <main class="contact-main">
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Contact Us</h1>
+      <p>We would love to hear from you. Send us a message or share your juice preferences.</p>
+      <form class="contact-form">
+        <fieldset>
+          <legend>Your contact details</legend>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Juice preferences</legend>
+          <div>
+            <label for="tasting-date">Preferred tasting date</label>
+            <input id="tasting-date" name="tasting-date" type="date">
+          </div>
+          <div>
+            <label for="sweetness">Preferred sweetness (1-10)</label>
+            <input id="sweetness" name="sweetness" type="range" min="1" max="10" value="5">
+          </div>
+          <div>
+            <label for="favorite-juice">Favorite juice</label>
+            <select id="favorite-juice" name="favorite-juice">
+              <option value="">Choose a juice</option>
+              <option value="orange">Orange</option>
+              <option value="mango">Mango</option>
+              <option value="pineapple">Pineapple</option>
+              <option value="berry">Mixed berry</option>
+            </select>
+          </div>
+          <label class="choice-option" for="newsletter">
+            <input id="newsletter" name="newsletter" type="checkbox" value="yes">
+            Send me juice news and offers
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Preferred contact method</legend>
+          <label class="choice-option" for="contact-email">
+            <input id="contact-email" name="contact-method" type="radio" value="email" checked>
+            Email
+          </label>
+          <label class="choice-option" for="contact-phone">
+            <input id="contact-phone" name="contact-method" type="radio" value="phone">
+            Phone
+          </label>
+        </fieldset>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+    <aside class="contact-aside" aria-label="Contact details and helpful information">
+      <section aria-labelledby="phone-heading">
+        <h2 id="phone-heading">Call us</h2>
+        <p><a href="tel:0759699451">0759699451</a></p>
+      </section>
+      <section class="contact-map-section" aria-labelledby="map-heading">
+        <h2 id="map-heading">Map example</h2>
+        <p>This map shows Kampala, Uganda, for illustration; it does not identify our business address.</p>
+        <iframe
+          class="contact-map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=32.55%2C0.29%2C32.61%2C0.34&amp;layer=mapnik&amp;marker=0.315%2C32.58"
+          title="OpenStreetMap map showing Kampala, Uganda"
+          width="600"
+          height="450"
+          loading="lazy"></iframe>
+        <p><a href="https://www.openstreetmap.org/?mlat=0.315&amp;mlon=32.58#map=14/0.315/32.58">View the map of Kampala on OpenStreetMap</a></p>
+      </section>
+      <section class="contact-video-section" aria-labelledby="video-heading">
+        <h2 id="video-heading">See how we prepare juice</h2>
+        <div class="juice-video-frame">
+          <video controls preload="metadata" poster="images/orange-juice.jpg" aria-label="Juice-making video with audio">
+            <source src="videos/juice-making.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </section>
+      <section class="contact-faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked question</h2>
+        <details>
+          <summary>How fresh is your juice?</summary>
+          <p>We prepare our juice with ripe fruit for a fresh, flavorful drink.</p>
+        </details>
+      </section>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; Shanitah Juice Company</p>
+  </footer>
+</body>
+</html>
